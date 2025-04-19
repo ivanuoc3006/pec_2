@@ -1,11 +1,1221 @@
+@prefix : <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3.org/2002/07/owl#> .
+@base <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#> .
 
-[ rdf:type owl:Ontology
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType
+:hasEventType rdf:type owl:ObjectProperty ;
+              rdfs:domain :Events ;
+              rdfs:range :EventTypes ;
+              rdfs:comment "Relates an event with his type" ;
+              rdfs:label "hasEventType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType
+:hasHotelType rdf:type owl:ObjectProperty ;
+              rdfs:domain :Hotels ;
+              rdfs:range :HotelType ;
+              rdfs:comment "Relates a hotel with his type" ;
+              rdfs:label "hasHotelType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType
+:hasPointOfInterestType rdf:type owl:ObjectProperty ;
+                        rdfs:domain :PointsOfInteres ;
+                        rdfs:range :PointOfInterestTypes ;
+                        rdfs:comment "Relates a Point of interest with his type" ;
+                        rdfs:label "hasPointOfInterestType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType
+:hasRestaurantType rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Restaurants ;
+                   rdfs:range :RestaurantTypes ;
+                   rdfs:comment "Relates a restaurant with his type" ;
+                   rdfs:label "hasRestaurantType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany
+:hasTransportCompany rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Transport ;
+                     rdfs:range :TransportCompanies ;
+                     rdfs:comment "Relates a transport with its transport company" ;
+                     rdfs:label "hasTransportCompany" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType
+:hasTransportType rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Transport ;
+                  rdfs:range :TransportTypes ;
+                  rdfs:comment "Relates a transport with its type" ;
+                  rdfs:label "hasTransportType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated
+:hotelRated rdf:type owl:ObjectProperty ;
+            rdfs:domain :Hotels ;
+            rdfs:range :HotelRating ;
+            rdfs:comment "Relates a hotel with his rating" ;
+            rdfs:label "hasHotelRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf
+:isCityOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :takePlace ;
+          rdfs:domain :City ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Events
+                                     :Hotels
+                                     :PointsOfInteres
+                                     :Restaurants
+                                     :Transport
+                                   )
+                     ] ;
+          rdfs:comment "Indicates that is city of" ;
+          rdfs:label "isCityOf" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost
+:nightCost rdf:type owl:ObjectProperty ;
+           rdfs:domain :Hotels ;
+           rdfs:range :HotelNightCost ;
+           rdfs:comment "Relates a hotel with his cost" ;
+           rdfs:label "hasHotelNightCost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated
+:pointOfInterestRated rdf:type owl:ObjectProperty ;
+                      rdfs:domain :PointsOfInteres ;
+                      rdfs:range :PointOfInterestRating ;
+                      rdfs:comment "Relates a point with his rating" ;
+                      rdfs:label "hasPoiRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost
+:restaurantAverageCost rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Restaurants ;
+                       rdfs:range :RestaurantAverageCost ;
+                       rdfs:comment "Relates a restaurant with his average cost" ;
+                       rdfs:label "hasRestaurantAverageCost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated
+:restaurantRated rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Restaurants ;
+                 rdfs:range :RestaurantRating ;
+                 rdfs:comment "Relates a restaurant with his rating" ;
+                 rdfs:label "hasRestaurantRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace
+:takePlace rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Events
+                                       :Hotels
+                                       :PointsOfInteres
+                                       :Restaurants
+                                       :Transport
+                                     )
+                       ] ;
+           rdfs:range :City ;
+           rdfs:comment "Relates an entity with a city" ;
+           rdfs:label "hasCity" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost
+:transportAverageCost rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Transport ;
+                      rdfs:range :TransportAverageCost ;
+                      rdfs:comment "Relates a transport with its average cost" ;
+                      rdfs:label "hasTransportAverageCost" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost
+:cost rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Cost ;
+      rdfs:range xsd:decimal ;
+      rdfs:comment "value of cost in euros" ;
+      rdfs:label "hasCost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Events ;
+         rdfs:range xsd:date ;
+         rdfs:comment "Date value of event" ;
+         rdfs:label "hasDate" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :IdentifiableEntity ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Indicates the ID of the identity" ;
+    rdfs:label "hasID" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive
+:isExpensive rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Cost ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "Indicate if the entity is expensive" ;
+             rdfs:label "isExpensive" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+          rdfs:domain :City ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Indicates latitude" ;
+          rdfs:label "hasLatitude" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+           rdfs:domain :City ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "Indicates longitude" ;
+           rdfs:label "hasLongitude" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :EntityWithName ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Indicates the name" ;
+      rdfs:label "hasName" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream
+:needSunCream rdf:type owl:DatatypeProperty ;
+              rdfs:domain :PointsOfInteres ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "Indicates if you need sun cream on the point of interest" ;
+              rdfs:label "needSunCream" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Rating ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "Indicates the rating value" ;
+        rdfs:label "hasRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars
+:stars rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Hotels ;
+       rdfs:range xsd:integer ;
+       rdfs:comment "Indicates hotel stars" ;
+       rdfs:label "hasStars" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :EntityWithName ;
+      rdfs:comment "A city is a place that contain events, hotels, restaurants and points of interes" ;
+      rdfs:label "City" ;
+      rdfs:sameAs "<http://dbpedia.org/ontology/City>" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost
+:Cost rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :cost ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:decimal
+                      ] ;
+      rdfs:comment "Cost represents a monetary value or price" ;
+      rdfs:label "Cost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName
+:EntityWithName rdf:type owl:Class ;
+                rdfs:subClassOf :IdentifiableEntity ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :name ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ;
+                owl:disjointWith :Transport ;
+                rdfs:comment "General class for entities that have a name property." ;
+                rdfs:label "EntityWithName" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes
+:EventTypes rdf:type owl:Class ;
+            rdfs:comment "Represents the category or classification of an event" ;
+            rdfs:label "EventType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events
+:Events rdf:type owl:Class ;
+        rdfs:subClassOf :EntityWithName ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEventType ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :EventTypes
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :takePlace ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :City
+                        ] ;
+        rdfs:comment "A event represent a schedule activity that happen at a specific date and place" ;
+        rdfs:label "Event" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost
+:HotelNightCost rdf:type owl:Class ;
+                rdfs:subClassOf :Cost ;
+                rdfs:comment "Night cost represent the price of a night in a hotel" ;
+                rdfs:label "NightCost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating
+:HotelRating rdf:type owl:Class ;
+             rdfs:subClassOf :Rating ;
+             rdfs:comment "A rating represents a qualitive evaluation of a hotel" ;
+             rdfs:label "HotelRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType
+:HotelType rdf:type owl:Class ;
+           rdfs:comment "Represents the category or classification of a hotel" ;
+           rdfs:label "HotelType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels
+:Hotels rdf:type owl:Class ;
+        rdfs:subClassOf :EntityWithName ;
+        rdfs:comment "A hotel is a place that provide lodging and other services to tourists" ;
+        rdfs:label "Hotel" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity
+:IdentifiableEntity rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :id ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:integer
+                                    ] ;
+                    rdfs:comment "A general class for entities that can be uniquely identified by an ID." ;
+                    rdfs:label "IdentifiableEntity" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating
+:PointOfInterestRating rdf:type owl:Class ;
+                       rdfs:subClassOf :Rating ;
+                       rdfs:comment "A rating represents a qualitive evaluation of a Point Of Interest" ;
+                       rdfs:label "PointOfInterestRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes
+:PointOfInterestTypes rdf:type owl:Class ;
+                      rdfs:comment "Represents the category or classification of  a point of interest" ;
+                      rdfs:label "PointOfInterestType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres
+:PointsOfInteres rdf:type owl:Class ;
+                 rdfs:subClassOf :EntityWithName ;
+                 rdfs:comment "A Point of interest represents a location that may attract tourist" ;
+                 rdfs:label "PointOfInterest" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :rating ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:decimal
+                        ] ;
+        rdfs:comment "A rating represents a qualitive evaluation" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost
+:RestaurantAverageCost rdf:type owl:Class ;
+                       rdfs:subClassOf :Cost ;
+                       rdfs:comment "This value represent the average cost of a meal at the restaurant" ;
+                       rdfs:label "RestaurantAverageCost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating
+:RestaurantRating rdf:type owl:Class ;
+                  rdfs:subClassOf :Rating ;
+                  rdfs:comment "A rating represents a qualitive evaluation of a Restaurant" ;
+                  rdfs:label "RestaurantRating" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes
+:RestaurantTypes rdf:type owl:Class ;
+                 rdfs:comment "Represents the category or classification of the food type in the restaurant" ;
+                 rdfs:label "RestaurantType" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants
+:Restaurants rdf:type owl:Class ;
+             rdfs:subClassOf :EntityWithName ;
+             rdfs:comment "Represents a place where food and beverages are prepared and served to customers" ;
+             rdfs:label "Restaurant" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf :IdentifiableEntity ;
+           rdfs:comment "Represent a mean of transportation within a city" ;
+           rdfs:label "Transport" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost
+:TransportAverageCost rdf:type owl:Class ;
+                      rdfs:subClassOf :Cost ;
+                      rdfs:comment "Represents the average cost of a transport per person for a single trip." ;
+                      rdfs:label "TransportAverageCost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies
+:TransportCompanies rdf:type owl:Class ;
+                    rdfs:comment "Represent the differents transport companies." ;
+                    rdfs:label "TransportCompany" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes
+:TransportTypes rdf:type owl:Class ;
+                rdfs:comment "Represents the category or classification of the mean transport." ;
+                rdfs:label "TransportType" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian
+:Andalusian rdf:type owl:NamedIndividual ,
+                     :RestaurantTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ;
+           :id 4 ;
+           :latitude 41.3874 ;
+           :longitude 2.1686 ;
+           :name "Barcelona" ;
+           rdfs:sameAs "<http://dbpedia.org/resource/Barcelona>" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach
+:Beach rdf:type owl:NamedIndividual ,
+                :HotelType ,
+                :PointOfInterestTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus
+:Bus rdf:type owl:NamedIndividual ,
+              :TransportTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Business
+:Business rdf:type owl:NamedIndividual ,
+                   :HotelType .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City_Zaragoza
+:City_Zaragoza rdf:type owl:NamedIndividual ,
+                        :TransportCompanies .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural
+:Cultural rdf:type owl:NamedIndividual ,
+                   :EventTypes ,
+                   :PointOfInterestTypes ;
+          rdfs:label "Cultural" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic
+:Gastronomic rdf:type owl:NamedIndividual ,
+                      :EventTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Italian
+:Italian rdf:type owl:NamedIndividual ,
+                  :RestaurantTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Japanese
+:Japanese rdf:type owl:NamedIndividual ,
+                   :RestaurantTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury
+:Luxury rdf:type owl:NamedIndividual ,
+                 :HotelType .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        :id 3 ;
+        :latitude 40.4168 ;
+        :longitude -3.7038 ;
+        :name "Madrid" ;
+        rdfs:sameAs "<http://dbpedia.org/resource/Madrid>" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mediterranean
+:Mediterranean rdf:type owl:NamedIndividual ,
+                        :RestaurantTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro
+:Metro rdf:type owl:NamedIndividual ,
+                :TransportTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro_Barcelona
+:Metro_Barcelona rdf:type owl:NamedIndividual ,
+                          :TransportCompanies .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican
+:Mexican rdf:type owl:NamedIndividual ,
+                  :RestaurantTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento
+:Monumento rdf:type owl:NamedIndividual ,
+                    :PointOfInterestTypes ;
+           rdfs:label "Monument" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo
+:Museo rdf:type owl:NamedIndividual ,
+                :PointOfInterestTypes ;
+       rdfs:label "Museum" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Music
+:Music rdf:type owl:NamedIndividual ,
+                :EventTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Parque
+:Parque rdf:type owl:NamedIndividual ,
+                 :PointOfInterestTypes ;
+        rdfs:label "Park" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Public_Bike
+:Public_Bike rdf:type owl:NamedIndividual ,
+                      :TransportTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rural
+:Rural rdf:type owl:NamedIndividual ,
+                :HotelType .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport
+:Sport rdf:type owl:NamedIndividual ,
+                :EventTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Taxi
+:Taxi rdf:type owl:NamedIndividual ,
+               :TransportTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tecnologic
+:Tecnologic rdf:type owl:NamedIndividual ,
+                     :EventTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo
+:Toledo rdf:type owl:NamedIndividual ,
+                 :City ;
+        :id 1 ;
+        :latitude 39.8628 ;
+        :longitude -4.0273 ;
+        :name "Toledo" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram
+:Tram rdf:type owl:NamedIndividual ,
+               :TransportTypes .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Toledo
+:Trans_Toledo rdf:type owl:NamedIndividual ,
+                       :TransportCompanies .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Valencia
+:Trans_Valencia rdf:type owl:NamedIndividual ,
+                         :TransportCompanies .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Turistic
+:Turistic rdf:type owl:NamedIndividual ,
+                   :HotelType .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Ubran_Madrid
+:Ubran_Madrid rdf:type owl:NamedIndividual ,
+                       :TransportCompanies .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia
+:Valencia rdf:type owl:NamedIndividual ,
+                   :City ;
+          :id 2 ;
+          :latitude 39.4699 ;
+          :longitude -0.3763 ;
+          :name "Valencia" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza
+:Zaragoza rdf:type owl:NamedIndividual ,
+                   :City ;
+          :id 5 ;
+          :latitude 41.6488 ;
+          :longitude -0.8891 ;
+          :name "Zaragoza" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro
+:barcelona_metro rdf:type owl:NamedIndividual ,
+                          :Transport ;
+                 :hasTransportCompany :Metro_Barcelona ;
+                 :hasTransportType :Bus ;
+                 :takePlace :Barcelona ;
+                 :transportAverageCost :metro_barcelona_average_cost ;
+                 :id 9 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10
+:event_10 rdf:type owl:NamedIndividual ,
+                   :Events ;
+          :hasEventType :Gastronomic ;
+          :takePlace :Barcelona ;
+          :hasDate "2024-06-28"^^xsd:date ;
+          :id 10 ;
+          :name "Congreso Barcelona" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13
+:event_13 rdf:type owl:NamedIndividual ,
+                   :Events ;
+          :hasEventType :Tecnologic ;
+          :takePlace :Valencia ;
+          :hasDate "2024-08-13"^^xsd:date ;
+          :id 13 ;
+          :name "Congreso Valencia" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15
+:event_15 rdf:type owl:NamedIndividual ,
+                   :Events ;
+          :hasEventType :Gastronomic ;
+          :takePlace :Zaragoza ;
+          :hasDate "2024-09-01"^^xsd:date ;
+          :id 15 ;
+          :name "Festival Zaragoza" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5
+:event_5 rdf:type owl:NamedIndividual ,
+                  :Events ;
+         :hasEventType :Sport ;
+         :takePlace :Toledo ;
+         :hasDate "2025-06-10"^^xsd:date ;
+         :id 5 ;
+         :name "Feria Toledo" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7
+:event_7 rdf:type owl:NamedIndividual ,
+                  :Events ;
+         :hasEventType :Sport ;
+         :takePlace :Madrid ;
+         :hasDate "2024-07-21"^^xsd:date ;
+         :id 7 ;
+         :name "Festival Madrid" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11
+:hotel_11 rdf:type owl:NamedIndividual ,
+                   :Hotels ;
+          :hasHotelType :Business ;
+          :hotelRated :hotel_11_rating ;
+          :nightCost :hotel_11_nightcost ;
+          :takePlace :Madrid ;
+          :id 11 ;
+          :name "Hotel Royal Madrid" ;
+          :stars 3 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost
+:hotel_11_nightcost rdf:type owl:NamedIndividual ,
+                             :HotelNightCost ;
+                    :cost 146 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating
+:hotel_11_rating rdf:type owl:NamedIndividual ,
+                          :HotelRating ;
+                 :rating 4.4 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17
+:hotel_17 rdf:type owl:NamedIndividual ,
+                   :Hotels ;
+          :hasHotelType :Beach ;
+          :hotelRated :hotel_17_rating ;
+          :nightCost :hotel_17_nightcost ;
+          :takePlace :Toledo ;
+          :id 17 ;
+          :name "Hotel Del Mar Toledo" ;
+          :stars 5 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost
+:hotel_17_nightcost rdf:type owl:NamedIndividual ,
+                             :HotelNightCost ;
+                    :cost 145 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating
+:hotel_17_rating rdf:type owl:NamedIndividual ,
+                          :HotelRating ;
+                 :rating 4.3 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5
+:hotel_5 rdf:type owl:NamedIndividual ,
+                  :Hotels ;
+         :hasHotelType :Luxury ;
+         :hotelRated :hotel_5_rating ;
+         :nightCost :hotel_5_nightcost ;
+         :takePlace :Zaragoza ;
+         :id 5 ;
+         :name "Hotel Palace Zaragoza" ;
+         :stars 4 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost
+:hotel_5_nightcost rdf:type owl:NamedIndividual ,
+                            :HotelNightCost ;
+                   :cost 120 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating
+:hotel_5_rating rdf:type owl:NamedIndividual ,
+                         :HotelRating ;
+                :rating 3.8 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7
+:hotel_7 rdf:type owl:NamedIndividual ,
+                  :Hotels ;
+         :hasHotelType :Turistic ;
+         :hotelRated :hotel_7_rating ;
+         :nightCost :hotel_7_nightcost ;
+         :takePlace :Valencia ;
+         :id 7 ;
+         :name "Hotel Royal Valencia" ;
+         :stars 5 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost
+:hotel_7_nightcost rdf:type owl:NamedIndividual ,
+                            :HotelNightCost ;
+                   :cost 76 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating
+:hotel_7_rating rdf:type owl:NamedIndividual ,
+                         :HotelRating ;
+                :rating 4.7 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9
+:hotel_9 rdf:type owl:NamedIndividual ,
+                  :Hotels ;
+         :hasHotelType :Beach ;
+         :hotelRated :hotel_9_rating ;
+         :nightCost :hotel_9_nightcost ;
+         :takePlace :Barcelona ;
+         :id 9 ;
+         :name "Hotel Royal Barcelona" ;
+         :stars 4 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost
+:hotel_9_nightcost rdf:type owl:NamedIndividual ,
+                            :HotelNightCost ;
+                   :cost 252 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating
+:hotel_9_rating rdf:type owl:NamedIndividual ,
+                         :HotelRating ;
+                :rating 4.0 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro
+:madrid_metro rdf:type owl:NamedIndividual ,
+                       :Transport ;
+              :hasTransportCompany :Ubran_Madrid ;
+              :hasTransportType :Metro ;
+              :takePlace :Madrid ;
+              :transportAverageCost :metro_madrid_average_cost ;
+              :id 1 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost
+:metro_barcelona_average_cost rdf:type owl:NamedIndividual ,
+                                       :TransportAverageCost ;
+                              :cost 8.72 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost
+:metro_madrid_average_cost rdf:type owl:NamedIndividual ,
+                                    :TransportAverageCost ;
+                           :cost 8.85 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1
+:poi_1 rdf:type owl:NamedIndividual ,
+                :PointsOfInteres ;
+       :hasPointOfInterestType :Museo ;
+       :pointOfInterestRated :poi_1_rating ;
+       :takePlace :Zaragoza ;
+       :id 1 ;
+       :name "Castillo Zaragoza" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10
+:poi_10 rdf:type owl:NamedIndividual ,
+                 :PointsOfInteres ;
+        :hasPointOfInterestType :Beach ;
+        :pointOfInterestRated :poi_10_rating ;
+        :takePlace :Toledo ;
+        :id 10 ;
+        :name "Castillo Toledo" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating
+:poi_10_rating rdf:type owl:NamedIndividual ,
+                        :PointOfInterestRating ;
+               :rating 3.7 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16
+:poi_16 rdf:type owl:NamedIndividual ,
+                 :PointsOfInteres ;
+        :hasPointOfInterestType :Cultural ;
+        :pointOfInterestRated :poi_16_rating ;
+        :takePlace :Barcelona ;
+        :id 16 ;
+        :name "Castillo Barcelona" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating
+:poi_16_rating rdf:type owl:NamedIndividual ,
+                        :PointOfInterestRating ;
+               :rating 4.5 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating
+:poi_1_rating rdf:type owl:NamedIndividual ,
+                       :PointOfInterestRating ;
+              :rating 3.7 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22
+:poi_22 rdf:type owl:NamedIndividual ,
+                 :PointsOfInteres ;
+        :hasPointOfInterestType :Monumento ;
+        :pointOfInterestRated :poi_22_rating ;
+        :takePlace :Valencia ;
+        :id 22 ;
+        :name "Catedral Valencia" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating
+:poi_22_rating rdf:type owl:NamedIndividual ,
+                        :PointOfInterestRating ;
+               :rating 3.6 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4
+:poi_4 rdf:type owl:NamedIndividual ,
+                :PointsOfInteres ;
+       :hasPointOfInterestType :Museo ;
+       :pointOfInterestRated :poi_4_rating ;
+       :takePlace :Madrid ;
+       :id 4 ;
+       :name "Museo Madrid" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating
+:poi_4_rating rdf:type owl:NamedIndividual ,
+                       :PointOfInterestRating ;
+              :rating 3.7 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1
+:restaurant_1 rdf:type owl:NamedIndividual ,
+                       :Restaurants ;
+              :hasRestaurantType :Mexican ;
+              :restaurantAverageCost :restaurant_1_average_cost ;
+              :restaurantRated :restaurant_1_rating ;
+              :takePlace :Toledo ;
+              :id 1 ;
+              :name "Restaurante Tradición Toledo" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost
+:restaurant_1_average_cost rdf:type owl:NamedIndividual ,
+                                    :RestaurantAverageCost ;
+                           :cost 46 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating
+:restaurant_1_rating rdf:type owl:NamedIndividual ,
+                              :RestaurantRating ;
+                     :rating 3.7 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2
+:restaurant_2 rdf:type owl:NamedIndividual ,
+                       :Restaurants ;
+              :hasRestaurantType :Japanese ;
+              :restaurantAverageCost :restaurant_2_average_cost ;
+              :restaurantRated :restaurant_2_rating ;
+              :takePlace :Madrid ;
+              :id 2 ;
+              :name "Restaurante Gourmet Madrid" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost
+:restaurant_2_average_cost rdf:type owl:NamedIndividual ,
+                                    :RestaurantAverageCost ;
+                           :cost 30 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating
+:restaurant_2_rating rdf:type owl:NamedIndividual ,
+                              :RestaurantRating ;
+                     :rating 4.8 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3
+:restaurant_3 rdf:type owl:NamedIndividual ,
+                       :Restaurants ;
+              :hasRestaurantType :Andalusian ;
+              :restaurantAverageCost :restaurant_3_average_cost ;
+              :restaurantRated :restaurant_3_rating ;
+              :takePlace :Valencia ;
+              :id 3 ;
+              :name "Restaurante Fusión Valencia" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost
+:restaurant_3_average_cost rdf:type owl:NamedIndividual ,
+                                    :RestaurantAverageCost ;
+                           :cost 13 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating
+:restaurant_3_rating rdf:type owl:NamedIndividual ,
+                              :RestaurantRating ;
+                     :rating 4.2 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43
+:restaurant_43 rdf:type owl:NamedIndividual ,
+                        :Restaurants ;
+               :hasRestaurantType :Mexican ;
+               :restaurantAverageCost :restaurant_43_average_cost ;
+               :restaurantRated :restaurant_43_rating ;
+               :takePlace :Barcelona ;
+               :id 43 ;
+               :name "Restaurante Fusión Barcelona" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost
+:restaurant_43_average_cost rdf:type owl:NamedIndividual ,
+                                     :RestaurantAverageCost ;
+                            :cost 43 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating
+:restaurant_43_rating rdf:type owl:NamedIndividual ,
+                               :RestaurantRating ;
+                      :rating 3.8 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7
+:restaurant_7 rdf:type owl:NamedIndividual ,
+                       :Restaurants ;
+              :hasRestaurantType :Andalusian ;
+              :restaurantAverageCost :restaurant_7_average_cost ;
+              :restaurantRated :restaurant_7_rating ;
+              :takePlace :Zaragoza ;
+              :id 7 ;
+              :name "Restaurante Gourmet Zaragoza" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost
+:restaurant_7_average_cost rdf:type owl:NamedIndividual ,
+                                    :RestaurantAverageCost ;
+                           :cost 66 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating
+:restaurant_7_rating rdf:type owl:NamedIndividual ,
+                              :RestaurantRating ;
+                     :rating 4.5 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram
+:toledo_tram rdf:type owl:NamedIndividual ,
+                      :Transport ;
+             :hasTransportCompany :Trans_Toledo ;
+             :hasTransportType :Tram ;
+             :takePlace :Toledo ;
+             :transportAverageCost :tram_toledo_medium_cost ;
+             :id 3 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost
+:tram_calencia_average_cost rdf:type owl:NamedIndividual ,
+                                     :TransportAverageCost ;
+                            :cost 9.05 ;
+                            rdfs:label "tram_valencia_average_cost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost
+:tram_toledo_medium_cost rdf:type owl:NamedIndividual ,
+                                  :TransportAverageCost ;
+                         :cost 3.61 ;
+                         rdfs:label "tram_toledo_average_cost" .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram
+:valencia_tram rdf:type owl:NamedIndividual ,
+                        :Transport ;
+               :hasTransportCompany :valencia_tram ;
+               :hasTransportType :Tram ;
+               :takePlace :Valencia ;
+               :transportAverageCost :tram_calencia_average_cost ;
+               :id 11 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus
+:zaragoza_bus rdf:type owl:NamedIndividual ,
+                       :Transport ;
+              :hasTransportCompany :City_Zaragoza ;
+              :hasTransportType :Bus ;
+              :takePlace :Zaragoza ;
+              :transportAverageCost :zaragoza_bus_average_cost ;
+              :id 4 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost
+:zaragoza_bus_average_cost rdf:type owl:NamedIndividual ,
+                                    :TransportAverageCost ;
+                           :cost 5.79 .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#1
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#1> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#2
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#2> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#3
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#3> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#4
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#4> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#5
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#5> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :City
+                :Events
+                :Hotels
+                :PointsOfInteres
+                :Restaurants
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#value> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#entity> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Need sun cream" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :PointsOfInteres ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPointOfInterestType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Beach
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :needSunCream ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Luxury Hotels" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :stars ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#r> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 4 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Hotels ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasHotelType ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Luxury
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Something is Expensive" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#value> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 50 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :cost ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#entity> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#value>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isExpensive ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#entity> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
  ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

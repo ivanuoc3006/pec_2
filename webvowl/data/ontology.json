@@ -1,8 +1,1670 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema" ],
-    "iri" : "No IRI set"
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism"
   },
-  "namespace" : [ ]
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Events",
+      "undefined" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "event_5"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "event_7"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "event_10"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "event_13"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "event_15"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A event represent a schedule activity that happen at a specific date and place"
+    },
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "subClasses" : [ "5", "6", "7" ],
+    "comment" : {
+      "undefined" : "A rating represents a qualitive evaluation"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelType",
+      "undefined" : "HotelType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Luxury"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rural",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Rural"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Turistic",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Turistic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Beach"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Business",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Business"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the category or classification of a hotel"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EntityWithName",
+      "undefined" : "EntityWithName"
+    },
+    "subClasses" : [ "10", "3", "16", "17", "1" ],
+    "comment" : {
+      "undefined" : "General class for entities that have a name property."
+    },
+    "id" : "2",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointsOfInteres",
+      "undefined" : "PointOfInterest"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_10"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_22"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_16"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_4"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A Point of interest represents a location that may attract tourist"
+    },
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantTypes",
+      "undefined" : "RestaurantType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Andalusian"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mediterranean",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Mediterranean"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Mexican"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Italian",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Italian"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Japanese",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Japanese"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the category or classification of the food type in the restaurant"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "zaragoza_bus"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "barcelona_metro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "valencia_tram"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "toledo_tram"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "madrid_metro"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represent a mean of transportation within a city"
+    },
+    "id" : "13",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventTypes",
+      "undefined" : "EventType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Gastronomic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tecnologic",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Tecnologic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Music",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Sport"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Cultural",
+        "undefined" : "Cultural"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the category or classification of an event"
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportTypes",
+      "undefined" : "TransportType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Metro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Public_Bike",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Public_Bike"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Taxi",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Taxi"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Bus"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Tram"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the category or classification of the mean transport."
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotels",
+      "undefined" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_7"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_11"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_9"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_17"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_5"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A hotel is a place that provide lodging and other services to tourists"
+    },
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cost",
+      "undefined" : "Cost"
+    },
+    "subClasses" : [ "37", "14", "38" ],
+    "comment" : {
+      "undefined" : "Cost represents a monetary value or price"
+    },
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointOfInterestRating",
+      "undefined" : "PointOfInterestRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_16_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_4_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_1_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_10_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "poi_22_rating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating represents a qualitive evaluation of a Point Of Interest"
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurants",
+      "undefined" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_43"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_7"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents a place where food and beverages are prepared and served to customers"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "<http://dbpedia.org/ontology/City>",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Toledo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "<http://dbpedia.org/resource/Barcelona>",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "<http://dbpedia.org/resource/Madrid>",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Madrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Valencia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Zaragoza"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A city is a place that contain events, hotels, restaurants and points of interes"
+    },
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompanies",
+      "undefined" : "TransportCompany"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro_Barcelona",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Metro_Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City_Zaragoza",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "City_Zaragoza"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Ubran_Madrid",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Ubran_Madrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Toledo",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Trans_Toledo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Valencia",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Trans_Valencia"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represent the differents transport companies."
+    },
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "16", "17", "13", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "19"
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "16", "17", "13", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantRating",
+      "undefined" : "RestaurantRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_3_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_43_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_7_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_1_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_2_rating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating represents a qualitive evaluation of a Restaurant"
+    },
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantAverageCost",
+      "undefined" : "RestaurantAverageCost"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_43_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_3_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_7_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_2_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "restaurant_1_average_cost"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This value represent the average cost of a meal at the restaurant"
+    },
+    "id" : "38",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelNightCost",
+      "undefined" : "NightCost"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_9_nightcost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_5_nightcost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_11_nightcost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_17_nightcost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_7_nightcost"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Night cost represent the price of a night in a hotel"
+    },
+    "id" : "37",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointOfInterestTypes",
+      "undefined" : "PointOfInterestType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Monumento",
+        "undefined" : "Monument"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Parque",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Parque",
+        "undefined" : "Park"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Museo",
+        "undefined" : "Museum"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Beach"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "Cultural",
+        "undefined" : "Cultural"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the category or classification of  a point of interest"
+    },
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportAverageCost",
+      "undefined" : "TransportAverageCost"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "tram_calencia_average_cost",
+        "undefined" : "tram_valencia_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "metro_madrid_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "tram_toledo_medium_cost",
+        "undefined" : "tram_toledo_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "zaragoza_bus_average_cost"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "metro_barcelona_average_cost"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the average cost of a transport per person for a single trip."
+    },
+    "id" : "14",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IdentifiableEntity",
+      "undefined" : "IdentifiableEntity"
+    },
+    "subClasses" : [ "2", "13" ],
+    "comment" : {
+      "undefined" : "A general class for entities that can be uniquely identified by an ID."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelRating",
+      "undefined" : "HotelRating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_11_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_7_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_5_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_17_rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating",
+      "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+      "labels" : {
+        "IRI-based" : "hotel_9_rating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A rating represents a qualitive evaluation of a hotel"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "latitude",
+      "undefined" : "hasLatitude"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Indicates latitude"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "transportAverageCost",
+      "undefined" : "hasTransportAverageCost"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Relates a transport with its average cost"
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "takePlace",
+      "undefined" : "hasCity"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Relates an entity with a city"
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "hasName"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the name"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "pointOfInterestRated",
+      "undefined" : "hasPoiRating"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates a point with his rating"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasEventType",
+      "undefined" : "hasEventType"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Relates an event with his type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf",
+    "inverse" : "18",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isCityOf",
+      "undefined" : "isCityOf"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Indicates that is city of"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hotelRated",
+      "undefined" : "hasHotelRating"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Relates a hotel with his rating"
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isExpensive",
+      "undefined" : "isExpensive"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Indicate if the entity is expensive"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "range" : "13",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasRestaurantType",
+      "undefined" : "hasRestaurantType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a restaurant with his type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasPointOfInterestType",
+      "undefined" : "hasPointOfInterestType"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Relates a Point of interest with his type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "rating",
+      "undefined" : "hasRating"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Indicates the rating value"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasTransportCompany",
+      "undefined" : "hasTransportCompany"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Relates a transport with its transport company"
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasTransportType",
+      "undefined" : "hasTransportType"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Relates a transport with its type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "range" : "17",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "16",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "restaurantAverageCost",
+      "undefined" : "hasRestaurantAverageCost"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a restaurant with his average cost"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "range" : "17",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "longitude",
+      "undefined" : "hasLongitude"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Indicates longitude"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "id",
+      "undefined" : "hasID"
+    },
+    "cardinality" : "1",
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Indicates the ID of the identity"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "16",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasHotelType",
+      "undefined" : "hasHotelType"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Relates a hotel with his type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "undefined" : "hasDate"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Date value of event"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "nightCost",
+      "undefined" : "hasHotelNightCost"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Relates a hotel with his cost"
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "cost",
+      "undefined" : "hasCost"
+    },
+    "cardinality" : "1",
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "value of cost in euros"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "stars",
+      "undefined" : "hasStars"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Indicates hotel stars"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "needSunCream",
+      "undefined" : "needSunCream"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Indicates if you need sun cream on the point of interest"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated",
+    "baseIri" : "http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "restaurantRated",
+      "undefined" : "hasRestaurantRating"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a restaurant with his rating"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "range" : "15",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "36",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "36",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "15",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "36",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  } ]
 }

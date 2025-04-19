@@ -1,2 +1,1128 @@
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an event with his type" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.w3.org/2000/01/rdf-schema#label> "hasEventType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a hotel with his type" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.w3.org/2000/01/rdf-schema#label> "hasHotelType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Point of interest with his type" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.w3.org/2000/01/rdf-schema#label> "hasPointOfInterestType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a restaurant with his type" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.w3.org/2000/01/rdf-schema#label> "hasRestaurantType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a transport with its transport company" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hasTransportCompany" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a transport with its type" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.w3.org/2000/01/rdf-schema#label> "hasTransportType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a hotel with his rating" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.w3.org/2000/01/rdf-schema#label> "hasHotelRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that is city of" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isCityOf> <http://www.w3.org/2000/01/rdf-schema#label> "isCityOf" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a hotel with his cost" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.w3.org/2000/01/rdf-schema#label> "hasHotelNightCost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a point with his rating" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.w3.org/2000/01/rdf-schema#label> "hasPoiRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a restaurant with his average cost" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#label> "hasRestaurantAverageCost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a restaurant with his rating" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.w3.org/2000/01/rdf-schema#label> "hasRestaurantRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an entity with a city" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.w3.org/2000/01/rdf-schema#label> "hasCity" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a transport with its average cost" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.w3.org/2000/01/rdf-schema#label> "hasTransportAverageCost" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> <http://www.w3.org/2000/01/rdf-schema#comment> "value of cost in euros" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> <http://www.w3.org/2000/01/rdf-schema#label> "hasCost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date value of event" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDate" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the ID of the identity" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> <http://www.w3.org/2000/01/rdf-schema#label> "hasID" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate if the entity is expensive" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive> <http://www.w3.org/2000/01/rdf-schema#label> "isExpensive" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates latitude" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLatitude" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates longitude" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLongitude" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the name" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if you need sun cream on the point of interest" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream> <http://www.w3.org/2000/01/rdf-schema#label> "needSunCream" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating value" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates hotel stars" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> <http://www.w3.org/2000/01/rdf-schema#label> "hasStars" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A city is a place that contain events, hotels, restaurants and points of interes" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "<http://dbpedia.org/ontology/City>" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> <http://www.w3.org/2000/01/rdf-schema#comment> "Cost represents a monetary value or price" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> <http://www.w3.org/2000/01/rdf-schema#label> "Cost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> <http://www.w3.org/2000/01/rdf-schema#comment> "General class for entities that have a name property." .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> <http://www.w3.org/2000/01/rdf-schema#label> "EntityWithName" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the category or classification of an event" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> <http://www.w3.org/2000/01/rdf-schema#label> "EventType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> <http://www.w3.org/2000/01/rdf-schema#comment> "A event represent a schedule activity that happen at a specific date and place" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Night cost represent the price of a night in a hotel" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> <http://www.w3.org/2000/01/rdf-schema#label> "NightCost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating represents a qualitive evaluation of a hotel" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> <http://www.w3.org/2000/01/rdf-schema#label> "HotelRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the category or classification of a hotel" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> <http://www.w3.org/2000/01/rdf-schema#label> "HotelType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> <http://www.w3.org/2000/01/rdf-schema#comment> "A hotel is a place that provide lodging and other services to tourists" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A general class for entities that can be uniquely identified by an ID." .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "IdentifiableEntity" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating represents a qualitive evaluation of a Point Of Interest" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> <http://www.w3.org/2000/01/rdf-schema#label> "PointOfInterestRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the category or classification of  a point of interest" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> <http://www.w3.org/2000/01/rdf-schema#label> "PointOfInterestType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> <http://www.w3.org/2000/01/rdf-schema#comment> "A Point of interest represents a location that may attract tourist" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> <http://www.w3.org/2000/01/rdf-schema#label> "PointOfInterest" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating represents a qualitive evaluation" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represent the average cost of a meal at the restaurant" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> <http://www.w3.org/2000/01/rdf-schema#label> "RestaurantAverageCost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> <http://www.w3.org/2000/01/rdf-schema#comment> "A rating represents a qualitive evaluation of a Restaurant" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> <http://www.w3.org/2000/01/rdf-schema#label> "RestaurantRating" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the category or classification of the food type in the restaurant" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> <http://www.w3.org/2000/01/rdf-schema#label> "RestaurantType" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EntityWithName> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a place where food and beverages are prepared and served to customers" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#IdentifiableEntity> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent a mean of transportation within a city" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the average cost of a transport per person for a single trip." .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> <http://www.w3.org/2000/01/rdf-schema#label> "TransportAverageCost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent the differents transport companies." .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> <http://www.w3.org/2000/01/rdf-schema#label> "TransportCompany" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the category or classification of the mean transport." .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> <http://www.w3.org/2000/01/rdf-schema#label> "TransportType" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> "41.3874"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> "2.1686"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Barcelona" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> <http://www.w3.org/2000/01/rdf-schema#sameAs> "<http://dbpedia.org/resource/Barcelona>" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Business
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City_Zaragoza
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City_Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City_Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Italian
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Japanese
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> "40.4168"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> "-3.7038"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Madrid" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> <http://www.w3.org/2000/01/rdf-schema#sameAs> "<http://dbpedia.org/resource/Madrid>" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mediterranean
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro_Barcelona
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento> <http://www.w3.org/2000/01/rdf-schema#label> "Monument" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo> <http://www.w3.org/2000/01/rdf-schema#label> "Museum" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Music
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Parque
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Parque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Parque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestTypes> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Parque> <http://www.w3.org/2000/01/rdf-schema#label> "Park" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Public_Bike
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Public_Bike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Public_Bike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rural
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Rural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Taxi
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tecnologic
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tecnologic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tecnologic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#EventTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> "39.8628"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> "-4.0273"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Toledo" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportTypes> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Toledo
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Valencia
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Turistic
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Turistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Turistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelType> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Ubran_Madrid
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Ubran_Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Ubran_Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportCompanies> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> "39.4699"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> "-0.3763"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Valencia" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#latitude> "41.6488"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#longitude> "-0.8891"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Zaragoza" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro_Barcelona> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#barcelona_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> "2024-06-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Congreso Barcelona" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tecnologic> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> "2024-08-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "13"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_13> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Congreso Valencia" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Gastronomic> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> "2024-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_15> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Festival Zaragoza" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> "2025-06-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Feria Toledo" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasEventType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Sport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasDate> "2024-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#event_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Festival Madrid" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Business> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "11"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Hotel Royal Madrid" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_nightcost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "146"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_11_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "17"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Hotel Del Mar Toledo" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_nightcost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "145"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_17_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Hotel Palace Zaragoza" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_nightcost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "120"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_5_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Turistic> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Hotel Royal Valencia" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_nightcost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "76"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_7_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotelRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#nightCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Hotel Royal Barcelona" .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelNightCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_nightcost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "252"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#HotelRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hotel_9_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Ubran_Madrid> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Metro> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#madrid_metro> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_barcelona_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "8.72"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#metro_madrid_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "8.85"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Castillo Zaragoza" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Castillo Toledo" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_10_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Cultural> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Castillo Barcelona" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_16_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_1_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Monumento> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "22"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Catedral Valencia" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_22_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Museo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#pointOfInterestRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Museo Madrid" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointOfInterestRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#poi_4_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Restaurante Tradición Toledo" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "46"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_1_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Japanese> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Madrid> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Restaurante Gourmet Madrid" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "30"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_2_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Restaurante Fusión Valencia" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "13"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_3_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Mexican> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Barcelona> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "43"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Restaurante Fusión Barcelona" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "43"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_43_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "3.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasRestaurantType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Andalusian> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurantRated> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#name> "Restaurante Gourmet Zaragoza" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "66"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#RestaurantRating> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#restaurant_7_rating> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#rating> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Trans_Toledo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Toledo> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#toledo_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "9.05"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost> <http://www.w3.org/2000/01/rdf-schema#label> "tram_valencia_average_cost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "3.61"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_toledo_medium_cost> <http://www.w3.org/2000/01/rdf-schema#label> "tram_toledo_average_cost" .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Tram> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Valencia> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#tram_calencia_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#valencia_tram> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "11"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Transport> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportCompany> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City_Zaragoza> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasTransportType> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Bus> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#takePlace> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Zaragoza> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#transportAverageCost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#id> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#TransportAverageCost> .
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#zaragoza_bus_average_cost> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> "5.79"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#1
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#2
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#3
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#4
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#5
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid19 <http://www.w3.org/2002/07/owl#members> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Restaurants> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Events> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#City> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid25 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid25 <http://www.w3.org/2000/01/rdf-schema#comment> "Need sun cream" .
+_:genid25 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Beach> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasPointOfInterestType> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#PointsOfInteres> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/untitled-ontology-9/p> .
+_:genid31 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#needSunCream> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#comment> "Luxury Hotels" .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid32 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid34 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Hotels> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#arguments> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#r> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid40 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#stars> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#Luxury> .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid42 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#hasHotelType> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "Something is Expensive" .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#value> .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#entity> .
+_:genid45 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#cost> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#arguments> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#value> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#entity> .
+_:genid51 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ivan.guzman/ontologies/2025/3/smart-turism#isExpensive> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
